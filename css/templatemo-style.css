@@ -6,6 +6,31 @@ https://templatemo.com/tm-458-lavish
 		
 */
 
+#about {
+    background: url('../images/home-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+    z-index: 1;
+}
+
+#about .container {
+    position: relative;
+    z-index: 2;
+}
+
+
 body
 {
 	background: #000000;
