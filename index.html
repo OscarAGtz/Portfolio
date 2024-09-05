@@ -3,78 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Gtz - Data Science Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Oscar Gutierrez Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
 </head>
 <body>
-    <header>
-        <h1>Oscar Gutierrez Araiza</h1>
-        <p>Industrial Physics Engineer | Data Science & AI Enthusiast</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Showcasing My Work in Data Science and Artificial Intelligence</p>
-            <button onclick="window.location.href='#projects'">Explore My Work</button>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an Industrial Physics Engineer specializing in Data Science and Artificial Intelligence. My focus lies in predictive modeling, data analysis, and solving technological challenges using advanced AI techniques. I’m currently pursuing my degree at Tecnológico de Monterrey and working on various projects related to machine learning and decision-making.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>Car Price Prediction</h3>
-            <p>This project uses machine learning models to predict the prices of used cars based on key features. It involves data preprocessing, feature engineering, and model comparison.</p>
-            <a href="https://github.com/OscarAGtz/Portfolio/blob/main/Car%20Price%20Prediction/Car_Price_Prediction.pdf" target="_blank">View Project (PDF)</a>
+    <div id="fullpage">
+        <div class="section" id="about">
+            <div class="container">
+                <h2>ABOUT ME</h2>
+                <h4>Industrial Physics Engineer | Data Science Enthusiast</h4>
+                <p>Hello! I'm Oscar Gutierrez, an Industrial Physics Engineer specializing in Data Science and Artificial Intelligence. I'm currently studying at Tecnológico de Monterrey, and I've worked on several projects, including predictive modeling and machine learning solutions like car price prediction and Boston house price prediction.</p>
+            </div>
         </div>
 
-        <div class="project">
-            <h3>Boston House Price Prediction</h3>
-            <p>This project involves analyzing housing data in Boston to predict home prices. It showcases my abilities in statistical modeling, data visualization, and regression techniques.</p>
-            <a href="https://github.com/OscarAGtz/Portfolio/blob/main/Boston%20House%20Price/Boston_house_price.pdf" target="_blank">View Project (PDF)</a>
+        <div class="section" id="portfolio">
+            <div class="container">
+                <h2 class="wow bounce">PROJECTS</h2>
+
+                <!-- Car Price Prediction Project -->
+                <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="portfolio-thumb">
+                        <img src="images/car_price_project.jpg" class="img-responsive" alt="Car Price Prediction">
+                        <div class="portfolio-overlay">
+                            <h4>Car Price Prediction</h4>
+                            <h5>Machine Learning Project</h5>
+                            <a href="https://github.com/OscarAGtz/Portfolio/blob/main/Car%20Price%20Prediction/Car_Price_Prediction.pdf" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boston House Price Prediction Project -->
+                <div class="col-md-4 col-xs-6 wow fadeIn" data-wow-delay="0.6s">
+                    <div class="portfolio-thumb">
+                        <img src="images/boston_house_price.jpg" class="img-responsive" alt="Boston House Price Prediction">
+                        <div class="portfolio-overlay">
+                            <h4>Boston House Price Prediction</h4>
+                            <h5>Data Analysis Project</h5>
+                            <a href="https://github.com/OscarAGtz/Portfolio/blob/main/Boston%20House%20Price/Boston_house_price.pdf" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Technical: Python, R, SQL, MATLAB, sklearn, pandas, numpy, statistical modeling</li>
-            <li>Soft Skills: Communication, Teamwork, Problem Solving</li>
-            <li>Languages: Spanish (Native), English (Advanced)</li>
-        </ul>
-    </section>
+        <div class="section" id="contact">
+            <div class="container">
+                <p class="contact-title">CONTACT ME</p>
+                <p><i class="fa fa-phone"></i> +52-123-4567</p>
+                <p><i class="fa fa-envelope-o"></i> oscar.garaiza@gmail.com</p>
+                <p><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/oscargtz17" target="_blank">LinkedIn Profile</a></p>
+                <p><i class="fa fa-github"></i> <a href="https://github.com/OscarAGtz" target="_blank">GitHub Profile</a></p>
+            </div>
+        </div>
+    </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you’d like to collaborate or learn more about my work, feel free to contact me via email or LinkedIn:</p>
-        <ul>
-            <li>Email: <a href="mailto:oscar.garaiza@gmail.com">oscar.garaiza@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/oscargtz17" target="_blank">linkedin.com/in/oscargtz17</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Oscar Gutierrez Araiza</p>
-        <ul class="social">
-            <li><a href="https://github.com/OscarAGtz" target="_blank">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/oscargtz17" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:oscar.garaiza@gmail.com">Email</a></li>
-        </ul>
-    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.simple-text-rotator.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
