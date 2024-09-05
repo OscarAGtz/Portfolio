@@ -6,29 +6,49 @@ https://templatemo.com/tm-458-lavish
 		
 */
 
+/* About section with image on the right */
 #about {
-    background: url('../images/home-bg.jpg') no-repeat center center;
-    background-size: cover;
-    color: #fff;
     padding: 100px 0;
-    position: relative;
 }
 
-#about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
-    z-index: 1;
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Space between text and image */
+    flex-wrap: wrap; /* Makes the layout responsive */
 }
 
-#about .container {
-    position: relative;
-    z-index: 2;
+.about-text {
+    flex: 1; /* Text takes 50% of the width */
+    max-width: 50%; /* Ensures the text doesn't stretch too much */
+    color: #fff; /* Adjust text color for visibility */
 }
+
+.about-image {
+    flex: 1; /* Image takes 50% of the width */
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
+
+/* Optional: Add a responsive design tweak for small screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+    }
+    .about-text, .about-image {
+        max-width: 100%; /* Full width for both on small screens */
+    }
+}
+
+
 
 
 body
