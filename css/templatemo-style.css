@@ -40,15 +40,6 @@ body
 	font-weight: 400;
 }
 
-#skills {
-    padding: 50px 0; /* Adjust to reduce vertical space */
-    margin-bottom: 0; /* Remove margin at the bottom */
-}
-
-#portfolio {
-    padding: 50px 0; /* Reduce padding between sections */
-    margin-top: 0; /* Ensure there is no unnecessary top margin */
-}
 
 /* start all section */
 #home,
@@ -453,3 +444,8 @@ footer hr
         color: #D43F52;
     }
 /* end social icon */
+
+#work, #skills, #about, #portfolio, #contact {
+    padding-top: 120px !important;  /* Adjust this value */
+    padding-bottom: 120px !important;  /* Adjust this value */
+}
