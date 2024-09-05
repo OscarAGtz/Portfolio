@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f8f9fa;
     color: #343a40;
     line-height: 1.6;
@@ -16,6 +16,10 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 header h1 {
@@ -35,10 +39,6 @@ nav ul {
     margin-top: 15px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -50,6 +50,38 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #0056b3;
+}
+
+.hero {
+    background-color: #007bff;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #003f8a;
 }
 
 section {
@@ -67,12 +99,17 @@ section {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 15px;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#projects .project:hover {
+    transform: translateY(-5px);
 }
 
 .project h3 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
@@ -94,7 +131,23 @@ footer {
     background-color: #343a40;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
-    position: relative;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #007bff;
 }
