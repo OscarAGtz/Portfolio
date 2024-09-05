@@ -43,7 +43,7 @@ If you'd like to learn more about my work or collaborate on a project, feel free
 
 ## 🔗 Live Portfolio
 
-Check out my live portfolio website here: [[Your Portfolio URL]](https://oscaragtz.github.io/Portfolio/)
+Check out my live portfolio website [here](https://oscaragtz.github.io/Portfolio/)
 
 ---
 
