@@ -97,7 +97,13 @@ html, body {
     margin-top: -32px;
     top: 50%;
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
+    
+    /* Vendor prefixes for compatibility */
+    -webkit-transform: translate3d(0, 0, 0); /* Chrome, Safari, Opera */
+    -moz-transform: translate3d(0, 0, 0);    /* Firefox */
+    -ms-transform: translate3d(0, 0, 0);     /* Internet Explorer */
+    -o-transform: translate3d(0, 0, 0);      /* Older Opera */
+    transform: translate3d(0, 0, 0);         /* Standard */
 }
 #fp-nav.right {
     right: 17px;
